@@ -125,6 +125,141 @@
     height: calc(100vh - 40vh);
 }
 
+@media (max-width: 1150px) {
+
+    .sec-1 h1 {
+        font-size: 3rem;
+    }
+
+    .sec-1 .container-1 {
+    }
+
+    .sec-1 .div1 {
+        width: 40%;
+        padding-right: 40px;
+    }
+
+    .sec-1 .div1 p {
+        font-size: 2.5rem;
+    }
+
+    .sec-1 .div1 a {
+        font-size: 2rem;
+    }
+
+    .sec-1 .div2 {
+        width: 40%;
+        padding-left: 40px;
+    }
+
+    .sec-1 .div2 img {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .sec-1 h1 {
+        font-size: 3rem;
+    }
+
+    .sec-1 .div1 p {
+        font-size: 2rem;
+    }
+
+    .sec-1 .div1 a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 886px) {
+
+    .sec-1 h1 {
+        width: 100%;
+        font-size: 3rem;
+        position: relative;
+    }
+
+    @keyframes sec1dec {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+
+    .sec-1 h1::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 10px;
+        background-color: #5B2FD9;
+        position: absolute;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        animation: sec1dec 2s infinite 2s;
+        transition: 3s;
+    }
+
+    .sec-1 .div1 {
+        width: 100%;
+    }
+
+    .sec-1 .div1 p {
+        font-size: 2.5rem;
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .sec-1 .div1 a {
+        font-size: 2rem;
+        padding-top: 0px;
+    }
+
+    .sec-1 .div2 img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .sec-1 h1 {
+        font-size: 2rem;
+    }
+
+    .sec-1 .div1 p {
+        font-size: 1.5rem;
+    }
+
+    .sec-1 .div1 a {
+        font-size: 1rem;
+    }
+
+    .sec-1 .div2 img {
+        padding-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sec-2-1 {
     padding-top: 500px;
 }
