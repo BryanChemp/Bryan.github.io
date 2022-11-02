@@ -140,11 +140,11 @@
     }
 
     .sec-1 .div1 p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .sec-1 .div1 a {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .sec-1 .div2 {
@@ -155,6 +155,7 @@
     .sec-1 .div2 img {
         width: 100%;
         padding-left: 60px;
+        transform: scale(1.2);
     }
 
 
@@ -174,6 +175,11 @@
     .sec-1 .div1 a {
         font-size: 1.5rem;
     }
+
+    .sec-1 .div2 img {
+        padding-top: 50px;
+    }
+
 }
 
 @media (max-width: 886px) {
@@ -182,6 +188,8 @@
         width: 100%;
         font-size: 3rem;
         position: relative;
+        padding-left: 22%;
+        padding-right: 14%;
     }
 
     @keyframes sec1dec {
@@ -190,21 +198,22 @@
         }
 
         100% {
-            width: 60%;
+            width: 10%;
         }
     }
 
     .sec-1 h1::after {
         content: "";
         display: block;
-        width: 60%;
+        width: 10%;
         height: 10px;
         background-color: #5B2FD9;
         position: absolute;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
-        animation: sec1dec 2s infinite 2s;
+        animation: sec1dec 1s 2s;
         transition: 3s;
+        margin-top: 10px;
     }
 
     .sec-1 .div1 {
@@ -215,11 +224,13 @@
         font-size: 2.5rem;
         padding-top: 60px;
         width: 100%;
+        padding-left: 200px;
     }
 
     .sec-1 .div1 a {
         font-size: 2rem;
         padding-top: 0px;
+        margin-left: 220px;
     }
 
     .sec-1 .div2 img {
@@ -230,20 +241,90 @@
 
 @media (max-width: 800px) {
     .sec-1 h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .sec-1 .div1 p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .sec-1 .div1 a {
-        font-size: 1rem;
+        font-size: 2rem;
+        width: 100%;
     }
 
     .sec-1 .div2 img {
         padding-left: 0px;
     }
+}
+
+@media (max-width: 800px) {
+
+    .sec-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sec-1 h1 {
+        max-width: 17%;
+        padding-left: 0px;
+        margin-left: 40px;
+        margin-top: 40px;
+        font-size: 3.8rem;
+        color: #c5c5c5;
+    }
+
+    .sec-1 .div1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sec-1 .div2 {
+        display: none;
+    }
+    
+
+    .sec-1 .div1 p {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 40px;
+        margin-top: 60px;
+        
+    }
+
+    .sec-1 .div1 a {
+        font-size: 1.5rem;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .header {
+        margin-left: 40px;
+    }
+
+    .header .menu {
+        gap: 20px;
+    }
+
+    .sec-1 h1 {
+        font-size: 3rem;
+    }
+
+    .sec-1 .div1 p {
+        font-size: 1.7rem;
+        padding-left: 50px;
+    }
+
+    .sec-1 .div1 a {
+        font-size: 1.2rem;
+        margin-left: 50px;
+    }
+
 }
 
 
